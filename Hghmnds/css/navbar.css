@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+
+.navbar {
+    background-color: #ffffff !important;
+    border-bottom: 2px solid #000000;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0.5rem 1rem;
+    position: relative;
+}
+
+/* Logo on the far left */
+.navbar-brand {
+    padding-left: 0;
+    color: #000000;
+    font-weight: bold;
+}
+
+.navbar-brand img {
+    max-height: 40px;
+    width: auto;
+    object-fit: contain;
+}
+
+.navbar-brand:hover {
+    color: #000000;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: color 0.3s ease;
+}
+
+/* Center nav links absolutely */
+.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* ✅ Reduced spacing between links */
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px; /* Changed from 15px to 8px */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .nav-link {
+    color: #000000;
+    transition: color 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    padding: 0 6px; /* Narrowed horizontal padding */
+    margin: 0;
+}
+
+.navbar .nav-link:hover {
+    color: #000000;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.navbar .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #000000;
+    transition: width 0.3s ease;
+}
+
+.navbar .nav-link:hover::after {
+    width: 100%;
+}
+
+/* Right-aligned login/register buttons without borders */
+.navbar-buttons {
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.navbar .btn {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+    color: #000;
+    background-color: transparent;
+    border: none;
+}
+
+.navbar .btn:hover {
+    background-color: #000;
+    color: #fff;
+}

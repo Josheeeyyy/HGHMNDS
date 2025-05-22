@@ -1,0 +1,299 @@
+#homepageCarousel {
+    margin-bottom: -2rem;
+    position: relative;
+}
+
+#homepageCarousel img {
+    height: 500px;
+    object-fit: cover;
+    width: 100%;
+}
+
+#homepageCarousel .carousel-control-prev,
+#homepageCarousel .carousel-control-next {
+    width: 40px;
+    height: 40px;
+    background: none; 
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+}
+
+#homepageCarousel .carousel-control-prev:hover,
+#homepageCarousel .carousel-control-next:hover {
+    opacity: 1;
+    background: none; 
+}
+
+#homepageCarousel .carousel-control-prev-icon,
+#homepageCarousel .carousel-control-next-icon {
+    background-image: none !important;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.featured-products h3 {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.featured-products .card {
+    border: none;
+    border-radius: 8px;
+    background-color: #fff;
+    overflow: hidden;
+    padding: 0.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease;
+}
+
+.featured-products .card:hover {
+    transform: scale(1.02);
+}
+
+.card-img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+.card-img-wrapper img.card-img {
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+}
+
+.card-img-wrapper img.hover-img {
+    opacity: 0;
+    z-index: 2;
+}
+
+.card-img-wrapper:hover img.main-img {
+    opacity: 0;
+}
+
+.card-img-wrapper:hover img.hover-img {
+    opacity: 1;
+}
+
+.featured-products .card-body {
+    padding: 1rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.featured-products .card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.featured-products .card-text {
+    font-size: 0.95rem;
+    color: #333;
+}
+
+#newArrivalsCarousel .carousel-control-prev,
+#newArrivalsCarousel .carousel-control-next {
+    background: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: black;
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+    z-index: 1;
+}
+
+#newArrivalsCarousel .carousel-control-prev:hover,
+#newArrivalsCarousel .carousel-control-next:hover {
+    opacity: 1;
+}
+
+#newArrivalsCarousel .carousel-control-prev {
+    left: -30px;
+}
+
+#newArrivalsCarousel .carousel-control-next {
+    right: -30px;
+}
+
+#newArrivalsCarousel .carousel-control-prev-icon,
+#newArrivalsCarousel .carousel-control-next-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    background-image: none;
+    color: black;
+}
+
+#newArrivalsCarousel .row {
+    margin: 0;
+}
+
+.promo-banner {
+    position: relative;
+    overflow: hidden;
+}
+
+.promo-content {
+    max-width: 600px;
+}
+
+.promo-content h2 {
+    font-size: 2.5rem;
+}
+
+.promo-content p {
+    font-size: 1.2rem;
+}
+
+.promo-banner .btn-primary {
+    background-color: #00205b;
+    border: none;
+    border-radius: 30px;
+}
+
+.triple-banner-row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
+}
+
+.triple-banner-row .hover-box {
+    flex: 1 1 33.3333%;
+    height: 400px;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 0 !important;
+    position: relative;
+}
+
+.triple-banner-row .hover-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-radius: 0 !important;
+}
+
+.triple-banner-row .hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(29, 116, 203, 0.7); 
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.triple-banner-row .hover-box:hover img {
+    transform: scale(1.05);
+}
+
+.triple-banner-row .hover-box:hover .hover-overlay {
+    opacity: 1;
+}
+
+.recommended-products .card {
+    border: none;
+    border-radius: 8px;
+    background-color: #fff;
+    overflow: hidden;
+    padding: 0.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease;
+}
+
+.recommended-products .card:hover {
+    transform: scale(1.02);
+}
+
+.recommended-products .card-img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 230px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.recommended-products .card-img-wrapper img.card-img {
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+}
+
+.recommended-products .card-img-wrapper img.hover-img {
+    opacity: 0;
+    z-index: 2;
+}
+
+.recommended-products .card-img-wrapper:hover img.main-img {
+    opacity: 0;
+}
+
+.recommended-products .card-img-wrapper:hover img.hover-img {
+    opacity: 1;
+}
+
+.recommended-products .card-body {
+    padding: 1rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.recommended-products .card-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+.recommended-products .card-text {
+    font-size: 0.9rem;
+    color: #333;
+}
